@@ -1,0 +1,42 @@
+CRITICAL - 2023-03-16 17:51:15 --> Constant FILTER_SANITIZE_STRING is deprecated
+#0 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Router\RouteCollection.php(1368): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Constant FILTER...', 'C:\\xampp\\htdocs...', 1368)
+#1 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Router\RouteCollection.php(628): CodeIgniter\Router\RouteCollection->create('*', 'BaseController(...', Object(Closure), NULL)
+#2 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\Routes.php(25): CodeIgniter\Router\RouteCollection->add('BaseController(...', Object(Closure))
+#3 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_app\Config\Routes.php(12): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(796): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#6 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\UAI-ingressos\dev\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-16 17:51:15 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_app\Config\Events.php:37) in C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2023-03-16 19:51:56 --> Error connecting to the database: Unknown database 'uai_ingressos'
+CRITICAL - 2023-03-16 19:51:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'uai_ingressos'
+#0 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Session\Handlers\DatabaseHandler.php(115): CodeIgniter\Database\BaseConnection->initialize()
+#1 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#2 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Session\Session.php(1001): session_start()
+#3 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Session\Session.php(249): CodeIgniter\Session\Session->startSession()
+#4 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\Services.php(736): CodeIgniter\Session\Session->start()
+#5 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#6 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#7 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#8 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Config\BaseService.php(263): CodeIgniter\Config\Services::session()
+#9 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#10 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_views\login.php(56): session()
+#11 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\View\View.php(230): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\Common.php(1271): CodeIgniter\View\View->render('login', Array, true)
+#14 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_app\Controllers\Home.php(126): view('login', Array)
+#15 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(928): App\Controllers\Home->login()
+#16 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 C:\xampp\htdocs\UAI-ingressos\dev\inguai_ci4\inguai_system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\UAI-ingressos\dev\index.php(37): CodeIgniter\CodeIgniter->run()
+#19 {main}

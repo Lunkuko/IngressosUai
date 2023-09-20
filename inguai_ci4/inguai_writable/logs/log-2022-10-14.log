@@ -1,0 +1,19 @@
+ERROR - 2022-10-14 10:06:55 --> Unknown column 'cad_estado' in 'field list'
+ERROR - 2022-10-14 10:08:35 --> Unknown column 'cad_estado' in 'field list'
+ERROR - 2022-10-14 10:27:07 --> Unknown column 'cad_estado' in 'field list'
+ERROR - 2022-10-14 16:18:30 --> Unknown column 'cad_estado' in 'field list'
+CRITICAL - 2022-10-14 16:18:30 --> Call to undefined method App\Models\LogsModel::save_log
+#0 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_app/Controllers/Home.php(695): CodeIgniter\Model->__call('save_log', Array)
+#1 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(928): App\Controllers\Home->ajaxform('CADASTRO')
+#2 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home2/miste079/oncloud.misterlab.com.br/unirio/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-10-14 18:05:13 --> Unknown column 'cad_estado' in 'field list'
+CRITICAL - 2022-10-14 18:05:13 --> Call to undefined method App\Models\LogsModel::save_log
+#0 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_app/Controllers/Home.php(695): CodeIgniter\Model->__call('save_log', Array)
+#1 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(928): App\Controllers\Home->ajaxform('CADASTRO')
+#2 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 /home2/miste079/oncloud.misterlab.com.br/unirio/mrlab_ci4/mrlab_system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /home2/miste079/oncloud.misterlab.com.br/unirio/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

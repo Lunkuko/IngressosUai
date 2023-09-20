@@ -1,0 +1,48 @@
+CRITICAL - 2022-11-17 16:44:31 --> Too few arguments to function App\Controllers\Home::escolha_ingresso(), 0 passed in C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php on line 928 and exactly 2 expected
+#0 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(928): App\Controllers\Home->escolha_ingresso()
+#1 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\_JOBS\UAI-ingressos\dev\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-11-17 17:45:46 --> Table 'miste079_uai_ingressos.tbl_eventos' doesn't exist
+ERROR - 2022-11-17 17:45:46 --> Table 'miste079_uai_ingressos.ci_sessions' doesn't exist
+CRITICAL - 2022-11-17 17:45:46 --> Call to a member function getRow() on bool
+#0 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('fc38a27d827ffb2...')
+#1 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Session/Session.php(1001): session_start()
+#2 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Session/Session.php(249): CodeIgniter\Session\Session->startSession()
+#3 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Config/Services.php(736): CodeIgniter\Session\Session->start()
+#4 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Config/BaseService.php(263): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#5 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Config/BaseService.php(192): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#6 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Config/Services.php(721): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#7 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Config/BaseService.php(263): CodeIgniter\Config\Services::session()
+#8 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Common.php(1053): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_views/templates/template_frontend.php(67): session()
+#10 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/View/View.php(230): include('/home2/miste079...')
+#11 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/View/View.php(246): CodeIgniter\View\View->render('templates/templ...', Array, true)
+#13 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/Common.php(1271): CodeIgniter\View\View->render('grid', Array, true)
+#14 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_app/Controllers/Home.php(164): view('grid', Array)
+#15 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/CodeIgniter.php(928): App\Controllers\Home->grid()
+#16 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 /home2/miste079/public_html/uai-ingressos/mrlab_ci4/mrlab_system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 /home2/miste079/public_html/uai-ingressos/index.php(37): CodeIgniter\CodeIgniter->run()
+#19 {main}
+CRITICAL - 2022-11-17 18:52:32 --> syntax error, unexpected end of file
+#0 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\View\View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\Common.php(1271): CodeIgniter\View\View->render('escolha-ingress...', Array, true)
+#2 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_app\Controllers\Home.php(191): view('escolha-ingress...', Array)
+#3 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(928): App\Controllers\Home->escolha_ingresso('anitta-cover', '2')
+#4 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\_JOBS\UAI-ingressos\dev\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-17 16:50:32 --> syntax error, unexpected ';', expecting ')'
+#0 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\Autoloader\Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\_JOBS\\UAI-in...')
+#1 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\Autoloader\Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\_JOBS\UAI-ingressos\dev\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -1,0 +1,12 @@
+CRITICAL - 2022-11-16 15:03:22 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(228): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(180): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\bootstrap.php(157): CodeIgniter\CodeIgniter->initialize()
+#3 C:\_JOBS\UAI-ingressos\dev\index.php(28): require('C:\\_JOBS\\UAI-in...')
+#4 {main}
+CRITICAL - 2022-11-16 15:04:40 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(228): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\CodeIgniter.php(180): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 C:\_JOBS\UAI-ingressos\dev\mrlab_ci4\mrlab_system\bootstrap.php(157): CodeIgniter\CodeIgniter->initialize()
+#3 C:\_JOBS\UAI-ingressos\dev\index.php(28): require('C:\\_JOBS\\UAI-in...')
+#4 {main}

@@ -1,0 +1,12 @@
+CRITICAL - 2022-10-18 15:05:49 --> Class 'App\Models\CadastrostempModel' not found
+#0 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(901): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-10-18 15:25:20 --> Class 'App\Models\CadastrostempModel' not found
+#0 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(901): App\Controllers\Home->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(426): CodeIgniter\CodeIgniter->createController()
+#2 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/mrlab_ci4/mrlab_system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /home2/miste079/oncloud.misterlab.com.br/asia-shipping/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

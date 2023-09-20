@@ -1,0 +1,9 @@
+{
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^6.0",
+        "ps/image-optimizer": "^2.0",
+        "mercadopago/dx-php": "^2.4",
+        "chillerlan/php-qrcode": "^3.4",
+        "mpdf/mpdf/mpdf": "^6.1"
+    }
+}

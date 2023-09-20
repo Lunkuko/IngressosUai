@@ -1,0 +1,54 @@
+
+.is_mobile{ display: none; }
+.is_desktop{ display: block; }
+
+@media only screen and (max-width: 991px){
+
+	.is_mobile{ display: block !important; }
+	.is_desktop{ display: none !important; }
+
+
+	h1, h2, h3, h4, h5, h6{ }
+
+	h1 { font-size: 1.25rem !important; }
+	h2 { font-size: 1.20rem !important; }
+	h3 { font-size: 0.90rem !important; }
+
+
+
+
+	/* MAIN */
+		main{
+			height: auto !important;  
+		}
+
+		.box-colm-agenda{ margin-left: -45px !important; }
+
+
+	/* CARDS */
+		.card.card-login{ 
+			width: 100% !important;  
+		}
+		.card.card-login .card-body {
+			padding: 16px 16px !important;
+		}
+		.card.card-contagem{ 
+			width: 100% !important;  
+		}
+
+
+	/* BUTTONS */
+		.btn-primary {
+			padding: .5rem 1.5rem !important;
+			font-size: .85rem !important;
+		}
+		.btn-cadastro {
+			font-size: 0.90rem !important;
+		}
+
+
+}
+
+@media only screen and (min-width: 1920px){
+
+}
